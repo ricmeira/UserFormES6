@@ -28,14 +28,21 @@ class UserController {
     addUser(event){
         event.preventDefault();
 
-        let user = new User(this._inputName.value, this._inputCpf.value, this._inputPhone.value, this._inputEmail.value);
+        let user = new User(this._inputName.value, this._inputCpf.value, 
+            this._inputPhone.value, this._inputEmail.value);
 
-        this._service.add(user).then(() => {
-            this._listUsers.add(user);
-            this._usersView.update(this._listUsers);
-            this._clearForm();
-        })
-        .catch(error => console.log(error));
+        if(UsersValidation.validate(user, this._inputName, this._inputEmail, this._inputPhone, this._inputCpf) === true){
+
+            this._service.add(user).then(() => {
+                this._listUsers.add(user);
+                this._usersView.update(this._listUsers);
+                this._clearForm();
+            })
+            .catch(error => console.log(error));
+        }
+        else{
+            console.log('Validation error!');
+        }
     }
 
     _clearForm() {

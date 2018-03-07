@@ -10,19 +10,19 @@
     <body class="container">
         
         <div class="form-container">
-            <form onsubmit="userController.addUser(event)">
+            <form>
                 <div class="form-group">
-                    <label for="name">Nome:</label>
+                    <label for="name">NOME:</label>
                     <input id="name" type="text" class="form-control"/>        
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email">EMAIL:</label>
                     <input id="email" type="email" class="form-control"/>        
                 </div>
 
                 <div class="form-group">
-                    <label for="phone">Telefone:</label>
+                    <label for="phone">TELEFONE:</label>
                     <input id="phone" type="text" class="form-control"/>        
                 </div>
 
@@ -31,13 +31,14 @@
                     <input id="cpf" type="text" class="form-control"/>        
                 </div>
                 
-                <button type="submit">Adicionar</button>
+                <button onclick="userController.addUser(event)">ADICIONAR</button>
             </form>
         </div>
 
         <div id="usersListView"></div>
 
         <script src="js/app/models/User.js"></script>
+        <script src="js/app/validators/UsersValidation.js"></script>
         <script src="js/app/models/ListUsers.js"></script>
         <script src="js/app/controllers/UserController.js"></script>
         <script src="js/app/services/UserService.js"></script>

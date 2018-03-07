@@ -24,9 +24,9 @@ class UserView extends View {
                     
                     <tr>
                         <td>${n.name}</td>
-                        <td>${n.email}</td>
-                        <td>${n.phone}</td>
                         <td>${n.cpf}</td>
+                        <td>${n.phone}</td>
+                        <td>${n.email}</td>
                     </tr>
                     
                 `).join('')}                   
