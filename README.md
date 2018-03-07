@@ -25,9 +25,15 @@ Npm Version: 5.0.3
 ------------------------------------------
 
 Still to come:
+
 1-Validation
+
 2-Modules
+
 3-Tests
+
 4-Prettier pages and CSS
+
 5-WebPack
+
 6-Refatoration
