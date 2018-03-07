@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>EasyInvest Test</title>       
+    </head>
+
+    <body class="container">
+
+        <form class="form" onsubmit="userController.addUser(event)">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input id="name" type="text" class="form-control" required/>        
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" type="text" class="form-control" required/>        
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input id="phone" type="text" class="form-control" required/>        
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input id="cpf" type="text" class="form-control" required/>        
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Adicionar</button>
+        </form>
+
+        <script src="js/app/models/User.js"></script>
+        <script src="js/app/controllers/UserController.js"></script>
+        <script src="js/app/services/UserService.js"></script>
+        <script src="js/app/services/HttpService.js"></script>
+        <script src="js/app/services/ConnectionFactory.js"></script>
+        <script src="js/app/dao/UserDao.js"></script>
+
+        <script>
+            var userController = new UserController();
+        </script>
+    </body>  
+</html>
