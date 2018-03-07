@@ -5,9 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass scss/main.scss --output css",
-    "build": "babel js/app-es6 -d js/app --source-maps",
-    "watch": "babel js/app-es6 -d js/app --source-maps --watch",
-    "buildweb": "webpack -d",
+    "buildwebdev": "webpack -d",
     "watchweb": "webpack --watch"
   },
   "author": "Ricardo Meira",
