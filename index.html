@@ -2,34 +2,38 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>EasyInvest Test</title>       
+        <title>EasyInvest Test</title>    
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">      
     </head>
 
     <body class="container">
+        
+        <div class="form-container">
+            <form onsubmit="userController.addUser(event)">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text" class="form-control"/>        
+                </div>
 
-        <form class="form" onsubmit="userController.addUser(event)">
-            <div class="form-group">
-                <label for="name">Nome:</label>
-                <input id="name" type="text" class="form-control" required/>        
-            </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" class="form-control"/>        
+                </div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input id="email" type="text" class="form-control" required/>        
-            </div>
+                <div class="form-group">
+                    <label for="phone">Telefone:</label>
+                    <input id="phone" type="text" class="form-control"/>        
+                </div>
 
-            <div class="form-group">
-                <label for="phone">Telefone:</label>
-                <input id="phone" type="text" class="form-control" required/>        
-            </div>
-
-            <div class="form-group">
-                <label for="cpf">CPF:</label>
-                <input id="cpf" type="text" class="form-control" required/>        
-            </div>
-            
-            <button class="btn btn-primary" type="submit">Adicionar</button>
-        </form>
+                <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input id="cpf" type="text" class="form-control"/>        
+                </div>
+                
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
 
         <div id="usersListView"></div>
 

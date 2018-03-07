@@ -8,7 +8,7 @@ class UserView extends View {
     template(model) {
 
         return `
-        <table class="table table-hover table-bordered">
+        <table class="userTable">
         
             <thead>
                 <tr>

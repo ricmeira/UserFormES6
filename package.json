@@ -1,11 +1,15 @@
 {
   "name": "easyinvest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss/main.scss --output css"
   },
   "author": "Ricardo Meira",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
 }
