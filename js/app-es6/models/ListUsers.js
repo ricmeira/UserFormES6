@@ -1,4 +1,4 @@
-class ListUsers {
+export class ListUsers {
 
     constructor() {
         this._users = [];

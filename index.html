@@ -9,7 +9,7 @@
 
     <body class="container">
         
-        <div class="form-container">
+        <div class="user-form">
             <form>
                 <div class="form-group">
                     <label for="name">NOME:</label>
@@ -37,19 +37,6 @@
 
         <div id="usersListView"></div>
 
-        <script src="js/app/models/User.js"></script>
-        <script src="js/app/validators/UsersValidation.js"></script>
-        <script src="js/app/models/ListUsers.js"></script>
-        <script src="js/app/controllers/UserController.js"></script>
-        <script src="js/app/services/UserService.js"></script>
-        <script src="js/app/services/HttpService.js"></script>
-        <script src="js/app/views/View.js"></script>
-        <script src="js/app/views/UserView.js"></script>
-        <script src="js/app/services/ConnectionFactory.js"></script>
-        <script src="js/app/dao/UserDao.js"></script>
-
-        <script>
-            var userController = new UserController();
-        </script>
+        <script src="./dist/bundle.js"></script>
     </body>  
 </html>

@@ -1,4 +1,10 @@
-class UserController {
+import { ListUsers } from '../models/ListUsers';
+import { User } from '../models/User';
+import { UserView } from '../views/UserView';
+import { UserService } from '../services/UserService';
+import { UsersValidation } from '../validators/UsersValidation';
+
+export class UserController {
 
     constructor(){
         let $ = document.querySelector.bind(document);
@@ -31,7 +37,8 @@ class UserController {
         let user = new User(this._inputName.value, this._inputCpf.value, 
             this._inputPhone.value, this._inputEmail.value);
 
-        if(UsersValidation.validate(user, this._inputName, this._inputEmail, this._inputPhone, this._inputCpf) === true){
+        if(UsersValidation.validate(user, this._inputName, 
+            this._inputEmail, this._inputPhone, this._inputCpf) === true){
 
             this._service.add(user).then(() => {
                 this._listUsers.add(user);

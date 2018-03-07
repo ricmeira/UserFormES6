@@ -1,4 +1,6 @@
-class UserDao {
+import { User } from '../models/User';
+
+export class UserDao {
 
     constructor(connection) {
         this._connection = connection;

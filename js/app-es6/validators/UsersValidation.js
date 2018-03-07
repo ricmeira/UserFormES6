@@ -1,4 +1,4 @@
-class UsersValidation{
+export class UsersValidation{
 
     static validate(user, inputName, inputEmail, inputPhone, inputCpf){
         let validations = { name: this._validateName(user.name), email: this._validateEmail(user.email),
@@ -22,6 +22,7 @@ class UsersValidation{
     }
 
     static _validateCPF(cpf){
+        //Checks if it only contains numbers
         if(cpf.length < 11 || !/^\d+$/.test(cpf)){
             return false;
         }

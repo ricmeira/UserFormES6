@@ -1,4 +1,9 @@
-class UserService {
+import { User } from '../models/User';
+import { HttpService } from './HttpService';
+import { ConnectionFactory } from './ConnectionFactory';
+import { UserDao } from '../dao/UserDao';
+
+export class UserService {
     
     constructor() {
         this._http = new HttpService();

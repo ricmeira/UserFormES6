@@ -1,4 +1,6 @@
-class UserView extends View {
+import { View } from './View';
+
+export class UserView extends View {
     
     constructor(elemento) {
         
