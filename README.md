@@ -12,7 +12,7 @@ Commands to run this project:
 
 4- Run "npm run scss" to create css files
 
-5- Run "npm run build" to create js folder/files using babel
+5- Run "npm run buildwebdev" to run webpack
 
 6- Test the page
 
@@ -26,14 +26,12 @@ Npm Version: 5.0.3
 
 Still to come:
 
-1-Validation
+1-Validation - In progress
 
-2-Modules
+2-Tests
 
-3-Tests
+3-Prettier pages and CSS
 
-4-Prettier pages and CSS
+4-WebPack - In progress
 
-5-WebPack
-
-6-Refatoration
+5-Refatoration - To start
